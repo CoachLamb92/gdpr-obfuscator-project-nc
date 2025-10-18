@@ -1,0 +1,4 @@
+{
+    "file_to_obfuscate": "s3://my_ingestion_bucket/gold_price_data.csv",
+    "pii_fields": ["open", "low", "adj_close"]
+}

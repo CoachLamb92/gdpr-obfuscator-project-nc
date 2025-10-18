@@ -1,0 +1,6 @@
+pytest
+boto3
+moto
+bandit
+flake8
+pytest-cov
