@@ -21,7 +21,6 @@ def obfuscate(input: str) -> None:
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger(__name__)
     input_dict = json.loads(input)
-
     s3_address = input_dict["file_to_obfuscate"]
     fields_to_obfuscate = input_dict["pii_fields"]
 

@@ -70,4 +70,8 @@ check-coverage:
 ## Run all checks
 run-checks: security-test flake8-src flake8-tests unit-test check-coverage
 
+## Run the showcase file
+showcase:
+	$(call execute_in_env, python showcase_project.py)
+
 ########################################################################

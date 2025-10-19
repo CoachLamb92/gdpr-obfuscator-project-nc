@@ -1,4 +1,4 @@
-from lambda_function import lambda_handler
+from src.lambda_function import lambda_handler
 import json
 import boto3
 from moto import mock_aws
