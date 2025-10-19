@@ -2,7 +2,9 @@
 
 ## Summary
 
-BLAH BLAH BLAH
+This Lambda function takes an event with a filepath to a CSV file, and a list of field names.
+
+It then creates a copy of the CSV and replaces the data in the fields provided with "\*\*\*" to maintain GDPR, then saves the obfuscated file to the same bucket (online) or a separate folder (offline).
 
 ## Putting the Obfuscator in an AWS Lambda
 
@@ -90,6 +92,9 @@ BLAH BLAH BLAH
 - On the repo page, click **<> Code** and select **Download ZIP** from the drop-down menu
 - Find the downloaded ZIP in your files
 - Extract it
+
+### Run the offline version
+
 - Open the CLI
 - Navigate to the downloaded repo (present working directory should end in: **gdpr-obfuscator-project-nc-main**)
 - Run the following commands in the CLI:
@@ -112,13 +117,13 @@ BLAH BLAH BLAH
 - Execute:
 
   ```
-  cat testing_files/test_data.csv
+  head testing_files/test_data.csv
   ```
 
   and
 
   ```
-  cat checking_files/test_data_obfuscated.csv
+  head checking_files/test_data_obfuscated.csv
   ```
 
   to see the differences for yourself!
