@@ -98,9 +98,9 @@ BLAH BLAH BLAH
   make requirements
   make run-checks
   ```
-- Check the contents of the **checking_files** folder using the code snippet below:
+- Make a new folder to hold the output files using the code below:
   ```
-  ls testing_files
+  mkdir checking_files
   ```
 - Nothing should be printed to the CLI, as the folder should be empy
 - Next, run the following code:
