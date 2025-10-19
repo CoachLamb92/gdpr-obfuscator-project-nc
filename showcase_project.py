@@ -4,7 +4,7 @@ import boto3
 from moto import mock_aws
 
 BUCKET_NAME = "my_ingestion_bucket"
-file_name = "gold_price_data.csv"
+file_name = "test_data.csv"
 obfuscated_file_name = f"{file_name.split(".")[0]}_obfuscated.{file_name.split(".")[1]}" 
 
 if file_name == "test_data.csv":

@@ -102,12 +102,11 @@ BLAH BLAH BLAH
   ```
   mkdir checking_files
   ```
-- Nothing should be printed to the CLI, as the folder should be empy
 - Next, run the following code:
   ```
   make showcase
   ```
-- Now, when you execute `ls testing_files`, you should see a file called "test_data_obfuscated.csv"
+- Now, when you execute `ls checking_files`, you should see a file called "test_data_obfuscated.csv"
 - Opening it will show a small data set where the personal identifying information has been obfuscated.
 - The original data set can be found in the **testing_files** folder under the name: "test_data.csv"
 - Execute:
